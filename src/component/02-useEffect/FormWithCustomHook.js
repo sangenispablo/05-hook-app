@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {useForm} from "../../hooks/useForm";
+import React, { useEffect } from 'react';
+import { useForm } from "../../hooks/useForm";
 
 import './effects.css';
 
@@ -11,7 +11,7 @@ export const FormWithCustomHook = () => {
         password: '',
     });
 
-    const {name, email, password} = formValues;
+    const { name, email, password } = formValues;
 
     useEffect(() => {
         console.log('el email cambió');
@@ -25,7 +25,7 @@ export const FormWithCustomHook = () => {
     return (
         <form onSubmit={handleSubmit}>
             <h1>Form with CustomHook</h1>
-            <hr/>
+            <hr />
             <div className="mb-3">
                 <label htmlFor="Input1" className="form-label">Nombre Completo</label>
                 <input

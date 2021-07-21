@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {Message} from "./Message";
+import React, { useEffect, useState } from 'react';
+import { Message } from "./Message";
 
 import './effects.css';
 
@@ -10,7 +10,7 @@ export const SimpleForm = () => {
         email: ''
     });
 
-    const {name, email} = formState;
+    const { name, email } = formState;
 
     // Este efecto se dispara solo cuando el componente se monta (es decir una sola vez)
     useEffect(() => {
@@ -27,7 +27,7 @@ export const SimpleForm = () => {
         // console.log('el Email cambió');
     }, [email]);
 
-    const handleInputChange = ({target}) => {
+    const handleInputChange = ({ target }) => {
         setFormState({
             ...formState,
             [target.name]: target.value,
@@ -37,7 +37,7 @@ export const SimpleForm = () => {
     return (
         <>
             <h1>useEffect</h1>
-            <hr/>
+            <hr />
             <div className="mb-3">
                 <label htmlFor="Input1" className="form-label">Nombre Completo</label>
                 <input
@@ -65,7 +65,7 @@ export const SimpleForm = () => {
                 />
             </div>
 
-            {name === '123' && <Message/>}
+            {name === '123' && <Message />}
         </>
     );
 };

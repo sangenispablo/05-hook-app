@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 // import {CounterWithCustomHook} from "./component/01-useState/CounterWithCustomHook";
 // import {SimpleForm} from "./component/02-useEffect/SimpleForm";
 // import {FormWithCustomHook} from "./component/02-useEffect/FormWithCustomHook";
-import {MultipleCustomHooks} from "./component/03-examples/MultipleCustomHooks";
+import { MultipleCustomHooks } from "./component/03-examples/MultipleCustomHooks";
 
 
 ReactDOM.render(
